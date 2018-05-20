@@ -1,0 +1,8 @@
+mixin menu(args)
+  nav.navigation
+    .menu--wrap
+      ul
+        each val in args.nav
+          li
+            a(href=val.href)=val.name
+  //.menu

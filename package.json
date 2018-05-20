@@ -1,0 +1,33 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "template for make html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://hjhjhaha@bitbucket.org/hjhjhaha/template.git"
+  },
+  "author": "duyph",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/hjhjhaha/template#readme",
+  "devDependencies": {
+    "bower": "*",
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-data": "*",
+    "gulp-minify": "*",
+    "gulp-pug": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*"
+  },
+  "dependencies": {
+    "npm": "^5.7.1"
+  }
+}

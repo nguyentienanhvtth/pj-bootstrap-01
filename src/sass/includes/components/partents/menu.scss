@@ -1,0 +1,14 @@
+@mixin menu() {
+    .menu--wrap{
+        ul{
+           @include rsul;
+           li{
+                @include dis(top);
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                }
+            } 
+        }
+    }
+}

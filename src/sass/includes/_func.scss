@@ -1,0 +1,111 @@
+@mixin dis($pos){
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: $pos;
+}
+
+@mixin bg($img,$rep,$post) {
+  background-image: url(#{$image-path}/#{$img});
+  background-repeat: $rep;
+  background-position: $post;
+}
+
+@mixin bgs($img,$rep,$post,$size) {
+  background-image: url(#{$image-path}/#{$img});
+  background-repeat: $rep;
+  background-position: $post;
+  -webkit-background-size: $size;
+  background-size: $size;
+}
+
+@mixin trans($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin rsul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+@mixin bor($color) {
+  border: 1px solid $color;
+}
+
+@mixin opacity($val) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$val*100})";
+  filter: alpha(opacity=#{$val*100});
+  -moz-opacity: $val;
+  -khtml-opacity: $val;
+  opacity: $val;
+}
+
+@mixin fonts($name,$namefile: '',$fontstyle: '') {
+  @if($namefile != '') {
+    @font-face {
+      font-family: $name;
+      src: url('#{$namefile}.eot');
+      src: url('#{$namefile}.eot?#iefix') format('embedded-opentype'),
+         url('#{$namefile}.woff') format('woff'),
+         url('#{$namefile}.ttf') format('truetype'),
+         url('#{$namefile}.svg##{$name}') format('svg');
+      @if($fontstyle != ''){
+        font-style: normal;
+        font-weight: $fontstyle;
+      }
+      @else{
+        font-style: normal;
+        font-weight: normal;
+      } 
+    }
+  } @else{
+    @font-face {
+      font-family: $name;
+      src: url('#{$name}.eot');
+      src: url('#{$name}.eot?#iefix') format('embedded-opentype'),
+         url('#{$name}.woff') format('woff'),
+         url('#{$name}.ttf') format('truetype'),
+         url('#{$name}.svg##{$name}') format('svg');
+      font-style: normal;
+      font-weight: normal;
+    }
+  }
+}
+
+/// @alias element
+@mixin e($elements...) {
+    $addElements: '';
+    @if length($elements) > 1 {
+        @for $i from 2 through length($elements) {
+            $addElements: $addElements + '#{&}__' + nth($elements, $i);
+        }
+    }
+
+    // We need to set the first modifier "by hand" to avoid nesting
+    &__#{nth($elements, 1)}#{$addElements} {
+        @content;
+    }
+}
+
+/// @alias modifier
+@mixin m($modifiers...) {
+    $addModifiers: '';
+    @if length($modifiers) > 1 {
+        @for $i from 2 through length($modifiers) {
+            $addModifiers: $addModifiers + '#{&}--' + nth($modifiers, $i);
+        }
+    }
+
+    // We need to set the first modifier "by hand" to avoid nesting
+    &--#{nth($modifiers, 1)}#{$addModifiers} {
+        @content;
+    }
+}
+
+@import "components/partents/menu";
