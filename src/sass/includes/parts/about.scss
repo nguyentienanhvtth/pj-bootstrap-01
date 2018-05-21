@@ -1,3 +1,162 @@
-p {
-	color: red;
+section#about{
+    p{
+        font-family:"Nunitosans Regular";
+    }
+    h1,h2,h3,h4,h5{
+        font-family: "Montserrat Medium";
+    }
+    .banner{
+        position: relative;
+        .img_background{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0 ;
+            bottom: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-image: url("images/home.jpg");
+        }
+        .container{
+            .row{
+                .banner__content{
+                    margin-top: 242px;
+                    margin-bottom: 200px;
+                    h1{
+                        margin-bottom: 45px;
+                    }
+                    p{
+                        margin-bottom: 45px;
+                    }
+                }
+                a.contact{
+                    padding: 25px 45px;
+                    letter-spacing: 3px;
+                    background:#39b4af;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    color:#ffffff;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+    }
+    .about_us{
+        padding-bottom: 100px;
+        .row{
+            .about_content{
+                margin-top: 100px;
+                width: 100%;
+                p{
+                    margin-bottom: 10px;
+                }
+                h3{
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        .row{
+            margin-top: 35px;
+            .about_Signature{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    .skill{
+        
+        .container-fluid{
+            background-color: #f3f3f3;
+            .row{
+
+                .skill_img_background{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0 ;
+                    bottom: 0;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-image: url("images/services-4.jpg");
+                }
+                position: relative;
+                .skill_left{
+                    margin-bottom: 165-72px;
+                    margin-top: 155-72px;
+                    padding: 72px;
+                    h1{
+                        font-size: 30px;
+                    }
+                    h3{
+                        margin-top: 40px;
+
+                        text-transform: uppercase;
+                        font-size: 12px;
+                    }
+                    .rectangle{
+                        margin-top: 23px;
+                        width: 100%;
+                        height: 3px;
+                        background: #d8d8d8;
+                        position: relative;
+                        .rectangle_1{
+                            width: 70%;
+                            height: 100%;
+                            position: absolute;
+                            background: #10c9c3;
+                        }
+
+                        .rectangle_2{
+                            width: 90%;
+                            height: 100%;
+                            position: absolute;
+                            background: #10c9c3;
+                        }
+
+                        .rectangle_3{
+                            width: 65%;
+                            height: 100%;
+                            position: absolute;
+                            background: #10c9c3;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    .statistical{
+        background-color: #10c9c3;
+        color: #ffffff;
+        padding: 100px 0;
+        .container{
+            .row{
+                h4,h5{
+                    text-transform: uppercase;
+                }
+                & > .col-sm-3{
+                    & > .row{
+                        .col-sm-3{
+                            .img_icon{
+                                margin: auto;                            }
+                        }
+                        .col-sm-9{
+                            h4{
+                                font-size: 18px;
+
+                            }
+                            h5{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -43,12 +43,123 @@ img {
   clear: both; }
 
 /* ------ Normalize ----- */
-p {
-  font-size: 30px;
-  color: red; }
+section#about p {
+  font-family: "Nunitosans Regular"; }
 
-h1 {
-  color: red; }
+section#about h1, section#about h2, section#about h3, section#about h4, section#about h5 {
+  font-family: "Montserrat Medium"; }
 
-p {
-  color: red; }
+section#about .banner {
+  position: relative; }
+  section#about .banner .img_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-image: url("images/home.jpg"); }
+  section#about .banner .container .row .banner__content {
+    margin-top: 242px;
+    margin-bottom: 200px; }
+    section#about .banner .container .row .banner__content h1 {
+      margin-bottom: 45px; }
+    section#about .banner .container .row .banner__content p {
+      margin-bottom: 45px; }
+  section#about .banner .container .row a.contact {
+    padding: 25px 45px;
+    letter-spacing: 3px;
+    background: #39b4af;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff; }
+    section#about .banner .container .row a.contact:hover {
+      text-decoration: none; }
+
+section#about .about_us {
+  padding-bottom: 100px; }
+  section#about .about_us .row .about_content {
+    margin-top: 100px;
+    width: 100%; }
+    section#about .about_us .row .about_content p {
+      margin-bottom: 10px; }
+    section#about .about_us .row .about_content h3 {
+      margin-bottom: 40px; }
+  section#about .about_us .row {
+    margin-top: 35px; }
+    section#about .about_us .row .about_Signature {
+      display: block;
+      margin: 0 auto; }
+
+section#about .skill .container-fluid {
+  background-color: #f3f3f3; }
+  section#about .skill .container-fluid .row {
+    position: relative; }
+    section#about .skill .container-fluid .row .skill_img_background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size: 100% 100%;
+      -o-background-size: 100%;
+      background-size: 100%;
+      background-image: url("images/services-4.jpg"); }
+    section#about .skill .container-fluid .row .skill_left {
+      margin-bottom: 93px;
+      margin-top: 83px;
+      padding: 72px; }
+      section#about .skill .container-fluid .row .skill_left h1 {
+        font-size: 30px; }
+      section#about .skill .container-fluid .row .skill_left h3 {
+        margin-top: 40px;
+        text-transform: uppercase;
+        font-size: 12px; }
+      section#about .skill .container-fluid .row .skill_left .rectangle {
+        margin-top: 23px;
+        width: 100%;
+        height: 3px;
+        background: #d8d8d8;
+        position: relative; }
+        section#about .skill .container-fluid .row .skill_left .rectangle .rectangle_1 {
+          width: 70%;
+          height: 100%;
+          position: absolute;
+          background: #10c9c3; }
+        section#about .skill .container-fluid .row .skill_left .rectangle .rectangle_2 {
+          width: 90%;
+          height: 100%;
+          position: absolute;
+          background: #10c9c3; }
+        section#about .skill .container-fluid .row .skill_left .rectangle .rectangle_3 {
+          width: 65%;
+          height: 100%;
+          position: absolute;
+          background: #10c9c3; }
+
+section#about .statistical {
+  background-color: #10c9c3;
+  color: #ffffff;
+  padding: 100px 0; }
+  section#about .statistical .container .row h4, section#about .statistical .container .row h5 {
+    text-transform: uppercase; }
+  section#about .statistical .container .row > .col-sm-3 > .row .col-sm-3 .img_icon {
+    margin: auto; }
+  section#about .statistical .container .row > .col-sm-3 > .row .col-sm-9 h4 {
+    font-size: 18px; }
+  section#about .statistical .container .row > .col-sm-3 > .row .col-sm-9 h5 {
+    font-size: 12px; }
+
+@font-face {
+  font-family: Nunitosans Regular;
+  src: url(fonts/NunitoSans-Regular.ttf); }
+
+@font-face {
+  font-family: Montserrat Medium;
+  src: url(fonts/Montserrat-Medium.ttf); }
