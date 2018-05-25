@@ -156,6 +156,120 @@ section#about .statistical {
   section#about .statistical .container .row > .col-sm-3 > .row .col-sm-9 h5 {
     font-size: 12px; }
 
+section#about .columns {
+  /*.row{
+                .col-sm-3{
+                    padding: 0;
+                }
+                .columns_img{
+                    position: relative;
+                    padding-bottom: 100%;
+
+                    .background_img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        &.img1{
+                            background-image: url("images/portfolio-1-sm.jpg");
+                        }
+                        &.img2{
+                            background-image: url("images/portfolio-2-sm.jpg");
+                        }
+                        &.img3{
+                            background-image: url("images/portfolio-3-sm.jpg");
+                        }
+                        &.img4{
+                            background-image: url("images/portfolio-10-sm.jpg");
+                        }
+                        &.img5{
+                            background-image: url("images/portfolio-5-sm.jpg");
+                        }
+                        &.img6{
+                            background-image: url("images/portfolio-6-sm.jpg");
+                        }
+                        &.img7{
+                            background-image: url("images/portfolio-7-sm.jpg");
+                        }
+                        &.img8{
+                            background-image: url("images/portfolio-9-sm.jpg");
+                        }
+                    }
+                }
+            }*/
+  /*.grid{
+                .grid-item{
+                    width: 25%;
+                    float: left;
+                    height: 337px;
+                    position: relative;
+                    .columns_img{
+                        .background_img{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            &.img1{
+                                background-image: url("images/portfolio-1-sm.jpg");
+                            }
+                            &.img2{
+                                background-image: url("images/portfolio-2-sm.jpg");
+                            }
+                            &.img3{
+                                background-image: url("images/portfolio-3-sm.jpg");
+                            }
+                            &.img4{
+                                background-image: url("images/portfolio-10-sm.jpg");
+                            }
+                            &.img5{
+                                background-image: url("images/portfolio-5-sm.jpg");
+                            }
+                            &.img6{
+                                background-image: url("images/portfolio-6-sm.jpg");
+                            }
+                            &.img7{
+                                background-image: url("images/portfolio-7-sm.jpg");
+                            }
+                            &.img8{
+                                background-image: url("images/portfolio-9-sm.jpg");
+                            }
+                        }
+                    }
+                }
+                .grid-item--height2{
+                    height: 448px;
+                }
+            }*/
+  /* clearfix */
+  /* ---- grid-item ---- */ }
+  section#about .columns .grid {
+    background: #EEE; }
+  section#about .columns .grid:after {
+    content: '';
+    display: block;
+    clear: both; }
+  section#about .columns .grid-sizer,
+  section#about .columns .grid-item {
+    width: 25%; }
+  section#about .columns .grid-item {
+    height: 120px;
+    float: left;
+    background: #D26;
+    border: 2px solid #333;
+    border-color: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+  section#about .columns .grid-item--height2 {
+    height: 200px; }
+
 @font-face {
   font-family: Nunitosans Regular;
   src: url(fonts/NunitoSans-Regular.ttf); }

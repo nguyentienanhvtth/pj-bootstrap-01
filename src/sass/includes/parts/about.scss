@@ -159,4 +159,126 @@ section#about{
             }
         }
     }
+    .columns{
+        //.container-fluid{
+            /*.row{
+                .col-sm-3{
+                    padding: 0;
+                }
+                .columns_img{
+                    position: relative;
+                    padding-bottom: 100%;
+
+                    .background_img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        &.img1{
+                            background-image: url("images/portfolio-1-sm.jpg");
+                        }
+                        &.img2{
+                            background-image: url("images/portfolio-2-sm.jpg");
+                        }
+                        &.img3{
+                            background-image: url("images/portfolio-3-sm.jpg");
+                        }
+                        &.img4{
+                            background-image: url("images/portfolio-10-sm.jpg");
+                        }
+                        &.img5{
+                            background-image: url("images/portfolio-5-sm.jpg");
+                        }
+                        &.img6{
+                            background-image: url("images/portfolio-6-sm.jpg");
+                        }
+                        &.img7{
+                            background-image: url("images/portfolio-7-sm.jpg");
+                        }
+                        &.img8{
+                            background-image: url("images/portfolio-9-sm.jpg");
+                        }
+                    }
+                }
+            }*/
+            /*.grid{
+                .grid-item{
+                    width: 25%;
+                    float: left;
+                    height: 337px;
+                    position: relative;
+                    .columns_img{
+                        .background_img{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            &.img1{
+                                background-image: url("images/portfolio-1-sm.jpg");
+                            }
+                            &.img2{
+                                background-image: url("images/portfolio-2-sm.jpg");
+                            }
+                            &.img3{
+                                background-image: url("images/portfolio-3-sm.jpg");
+                            }
+                            &.img4{
+                                background-image: url("images/portfolio-10-sm.jpg");
+                            }
+                            &.img5{
+                                background-image: url("images/portfolio-5-sm.jpg");
+                            }
+                            &.img6{
+                                background-image: url("images/portfolio-6-sm.jpg");
+                            }
+                            &.img7{
+                                background-image: url("images/portfolio-7-sm.jpg");
+                            }
+                            &.img8{
+                                background-image: url("images/portfolio-9-sm.jpg");
+                            }
+                        }
+                    }
+                }
+                .grid-item--height2{
+                    height: 448px;
+                }
+            }*/
+            .grid {
+              background: #EEE;
+            }
+
+            /* clearfix */
+            .grid:after {
+              content: '';
+              display: block;
+              clear: both;
+            }
+
+            /* ---- grid-item ---- */
+
+            .grid-sizer,
+            .grid-item {
+              width: 25%;
+            }
+
+            .grid-item {
+              height: 120px;
+              float: left;
+              background: #D26;
+              border: 2px solid #333;
+              border-color: hsla(0, 0%, 0%, 0.5);
+              border-radius: 5px;
+            }
+            .grid-item--height2 { height: 200px; }
+        //}
+    }
 }
